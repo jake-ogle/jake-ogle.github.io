@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jake Ogle | Software Engineer</title>
+    <meta name="description" content="Portfolio for Jake Ogle, software engineer with experience in academia and industry." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&family=IBM+Plex+Mono:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true">
+      <div class="orb orb-a"></div>
+      <div class="orb orb-b"></div>
+      <div class="grid"></div>
+    </div>
+
+    <header class="site-header">
+      <div class="brand">
+        <div class="sig">JO</div>
+        <div>
+          <p class="eyebrow">Software Engineer</p>
+          <h1>Jake Ogle</h1>
+        </div>
+      </div>
+      <div class="header-actions">
+        <nav class="site-nav">
+          <a href="#work">Work</a>
+          <a href="#research">Research</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-pressed="true">
+          <span class="toggle-label">Theme</span>
+          <span class="toggle-track">
+            <span class="toggle-thumb"></span>
+          </span>
+          <span class="toggle-state">Dark</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">Engineering + Research</p>
+          <h2>Building resilient systems that translate research into product.</h2>
+          <p class="lede">
+            I design and ship software across academia and industry, with a focus on distributed systems,
+            ML infrastructure, and developer tooling. I enjoy translating complex ideas into reliable,
+            human-centered software.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#contact">Start a conversation</a>
+            <a class="btn ghost" href="#work">See recent work</a>
+          </div>
+          <div class="stats">
+            <div>
+              <p class="stat-value">8+ yrs</p>
+              <p class="stat-label">Engineering & research</p>
+            </div>
+            <div>
+              <p class="stat-value">15+</p>
+              <p class="stat-label">Projects shipped</p>
+            </div>
+            <div>
+              <p class="stat-value">3</p>
+              <p class="stat-label">Domains bridged</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <div class="card">
+            <p class="card-eyebrow">Focus areas</p>
+            <ul class="chips">
+              <li>Distributed systems</li>
+              <li>ML platforms</li>
+              <li>Developer experience</li>
+              <li>Research engineering</li>
+            </ul>
+          </div>
+          <div class="card">
+            <p class="card-eyebrow">Currently</p>
+            <p class="card-title">Staff Software Engineer</p>
+            <p class="card-body">
+              Building scalable data and experimentation platforms. Previously led research prototypes into
+              production for applied ML teams.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="work">
+        <div class="section-head">
+          <h3>Selected Work</h3>
+          <p>Case studies that balance rigor, reliability, and speed.</p>
+        </div>
+        <div class="grid-3">
+          <article class="work-card">
+            <div class="work-meta">
+              <span>Platform</span>
+              <span>2024</span>
+            </div>
+            <h4>Experimentation Orchestrator</h4>
+            <p>
+              Led architecture for a multi-tenant experimentation system that cut model iteration cycles by 40%.
+            </p>
+            <ul class="work-tags">
+              <li>Python</li>
+              <li>Kubernetes</li>
+              <li>Feature flags</li>
+            </ul>
+          </article>
+          <article class="work-card">
+            <div class="work-meta">
+              <span>Research</span>
+              <span>2023</span>
+            </div>
+            <h4>Scalable Graph Inference</h4>
+            <p>
+              Built an academic-industry collaboration for graph inference tooling, enabling 5x larger datasets.
+            </p>
+            <ul class="work-tags">
+              <li>CUDA</li>
+              <li>PyTorch</li>
+              <li>HPC</li>
+            </ul>
+          </article>
+          <article class="work-card">
+            <div class="work-meta">
+              <span>Product</span>
+              <span>2022</span>
+            </div>
+            <h4>Developer Insights Hub</h4>
+            <p>
+              Delivered a self-serve analytics hub for engineering orgs, aligning platform metrics with delivery.
+            </p>
+            <ul class="work-tags">
+              <li>TypeScript</li>
+              <li>React</li>
+              <li>Snowflake</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="research">
+        <div>
+          <h3>Academic DNA</h3>
+          <p>
+            Experience spanning labs, publications, and grant-funded prototypes. I thrive when research
+            demands engineering maturity to reach the real world.
+          </p>
+          <ul class="list">
+            <li>Partnered with faculty to operationalize research prototypes into production stacks.</li>
+            <li>Published and presented work on scalable inference and data systems.</li>
+            <li>Mentored graduate students on reproducibility, infrastructure, and deployment.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <p class="panel-title">Research toolkit</p>
+          <div class="panel-grid">
+            <div>
+              <p class="panel-label">Languages</p>
+              <p class="panel-value">Python, C++, Rust</p>
+            </div>
+            <div>
+              <p class="panel-label">Methods</p>
+              <p class="panel-value">Graph ML, systems, optimization</p>
+            </div>
+            <div>
+              <p class="panel-label">Delivery</p>
+              <p class="panel-value">Reproducibility, pipelines, infra</p>
+            </div>
+            <div>
+              <p class="panel-label">Collaboration</p>
+              <p class="panel-value">Labs, industry, open source</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="section-head">
+          <h3>Experience</h3>
+          <p>Roles across product engineering, platform, and research.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-title">
+              <h4>Staff Software Engineer</h4>
+              <span>Industry</span>
+            </div>
+            <p>
+              Leading platform initiatives for ML experimentation, reliability, and developer enablement.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-title">
+              <h4>Research Engineer</h4>
+              <span>Academia</span>
+            </div>
+            <p>
+              Built scalable inference pipelines and collaborated on grant-funded prototypes for research labs.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-title">
+              <h4>Software Engineer</h4>
+              <span>Industry</span>
+            </div>
+            <p>
+              Delivered developer tooling, observability, and data platforms supporting cross-functional teams.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div>
+          <h3>Let's build something resilient.</h3>
+          <p>
+            Open to collaborations, research partnerships, and ambitious infrastructure projects.
+            Reach out to swap ideas or talk about what you're building.
+          </p>
+        </div>
+        <div class="contact-card">
+          <p class="contact-label">Say hello</p>
+          <a class="contact-link" href="mailto:hello@jakeogle.com">hello@jakeogle.com</a>
+          <div class="contact-actions">
+            <a class="btn primary" href="mailto:hello@jakeogle.com">Email me</a>
+            <a class="btn ghost" href="#top">Back to top</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Based in the U.S. | Open to remote or hybrid roles</p>
+      <p>© 2026 Jake Ogle</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

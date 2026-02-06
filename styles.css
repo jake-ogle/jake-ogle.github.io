@@ -224,9 +224,8 @@ main {
 
 .hero {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 48px;
-  align-items: center;
+  grid-template-columns: 1fr;
+  gap: 36px;
 }
 
 .hero h2 {
@@ -238,7 +237,7 @@ main {
 .lede {
   font-size: 1.1rem;
   color: var(--text-muted);
-  max-width: 560px;
+  max-width: none;
 }
 
 .hero-actions {
@@ -296,7 +295,8 @@ main {
 
 .hero-panel {
   display: grid;
-  gap: 20px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
 }
 
 .card {
@@ -538,6 +538,10 @@ main {
 }
 
 @media (max-width: 640px) {
+  .hero-panel {
+    grid-template-columns: 1fr;
+  }
+
   .hero-actions,
   .contact-actions {
     flex-direction: column;

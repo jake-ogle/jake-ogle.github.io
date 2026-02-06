@@ -1,253 +1,258 @@
+<!-- index.html -->
 <!doctype html>
 <html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Jake Ogle | Software Engineer</title>
-  <meta name="description"
-    content="Portfolio for Jake Ogle, software engineer with experience in academia and industry." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&family=IBM+Plex+Mono:wght@300;400;600&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
+    <title>Jake Ogle | ML Systems Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio for Jake Ogle, ML systems engineer building distributed inference on Slurm-managed GPU clusters, large-scale data/annotation pipelines, and medical imaging ML infrastructure."
+    />
 
-<body>
-  <div class="ambient" aria-hidden="true">
-    <div class="orb orb-a"></div>
-    <div class="orb orb-b"></div>
-    <div class="grid"></div>
-  </div>
+    <!-- Replace with your real domain URL -->
+    <link rel="canonical" href="https://example.com/" />
 
-  <header class="site-header">
-    <div class="brand">
-      <div class="sig">JO</div>
-      <div>
-        <p class="eyebrow">Software Engineer</p>
-        <h1>Jake Ogle</h1>
-      </div>
+    <!-- Social preview -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jake Ogle | ML Systems Engineer" />
+    <meta
+      property="og:description"
+      content="Distributed inference on Slurm-managed GPU clusters, large-scale data/annotation pipelines, and medical imaging ML infrastructure."
+    />
+    <meta property="og:url" content="https://example.com/" />
+    <!-- <meta property="og:image" content="https://example.com/og-image.png" /> -->
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jake Ogle | ML Systems Engineer" />
+    <meta
+      name="twitter:description"
+      content="Distributed inference on Slurm-managed GPU clusters, large-scale data/annotation pipelines, and medical imaging ML infrastructure."
+    />
+    <!-- <meta name="twitter:image" content="https://example.com/og-image.png" /> -->
+
+    <meta name="theme-color" content="#0b0f14" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&family=IBM+Plex+Mono:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="ambient" aria-hidden="true">
+      <div class="orb orb-a"></div>
+      <div class="orb orb-b"></div>
+      <div class="grid"></div>
     </div>
-    <div class="header-actions">
-      <nav class="site-nav">
-        <a href="#work">Work</a>
-        <a href="#research">Research</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button class="theme-toggle" type="button" aria-pressed="true">
-        <span class="toggle-label">Theme</span>
-        <span class="toggle-track">
-          <span class="toggle-thumb"></span>
-        </span>
-        <span class="toggle-state">Dark</span>
-      </button>
-    </div>
-  </header>
 
-  <main>
-    <section class="hero" id="top">
-      <div class="hero-copy">
-        <p class="eyebrow">Engineering + Research</p>
-        <p class="lede">
-          I design and ship software and data tools across academia and industry, with a focus on distributed systems,
-          ML infrastructure, and developer tooling.
-        </p>
+    <header class="site-header">
+      <div class="brand">
+        <div class="sig" aria-hidden="true">JO</div>
+        <div>
+          <p class="eyebrow">ML Systems / Infrastructure</p>
+          <h1>Jake Ogle</h1>
+        </div>
       </div>
-      <div class="hero-panel">
-        <div class="card">
-          <p class="card-eyebrow">Focus areas</p>
-          <ul class="chips">
-            <li>ML systems engineering</li>
-            <li>Distributed inference on HPC/GPU clusters</li>
-            <li>Large-scale data and annotation pipelines</li>
-            <li>Performance-critical GPU workloads</li>
-            <li>Medical imaging ML infrastructure</li>
+
+      <div class="header-actions">
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#work">Work</a>
+          <a href="#research">Research</a>
+          <a href="#education">Education</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="true">
+          <span class="toggle-label">Theme</span>
+          <span class="toggle-track" aria-hidden="true">
+            <span class="toggle-thumb"></span>
+          </span>
+          <span class="toggle-state" aria-live="polite">Dark</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Engineering + Research</p>
+
+          <h2 id="hero-title" class="sr-only">Overview</h2>
+
+          <p class="lede">
+            I build ML platforms on Slurm-managed GPU clusters: distributed inference, large-scale annotation/data
+            pipelines, and imaging ETL with strong reproducibility and observability.
+          </p>
+        </div>
+
+        <div class="hero-panel">
+          <div class="card">
+            <p class="card-eyebrow">Focus areas</p>
+            <ul class="chips" aria-label="Areas of focus">
+              <li>ML systems engineering</li>
+              <li>Distributed inference on HPC/GPU clusters</li>
+              <li>Large-scale data and annotation pipelines</li>
+              <li>Performance-critical GPU workloads</li>
+              <li>Medical imaging ML infrastructure</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <p class="card-eyebrow">Currently</p>
+            <p class="card-title">
+              Machine Learning Engineer @ Michigan Medicine in the
+              <a href="https://mlins.org/" target="_blank" rel="noopener noreferrer">
+                Machine Learning in Neurosurgery Lab
+              </a>
+            </p>
+            <p class="card-body">
+              Building scalable data and experimentation platforms on Slurm-managed HPC environments, including
+              GPU-backed inference services, evaluation pipelines, and medical imaging workflows with traceable
+              artifacts.
+            </p>
+
+            <!-- Optional: quick links -->
+            <!--
+            <p class="card-body">
+              <a href="https://github.com/yourhandle" target="_blank" rel="noopener noreferrer">GitHub</a>
+              ·
+              <a href="https://www.linkedin.com/in/yourhandle" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              ·
+              <a href="/JakeOgle_Resume.pdf">Resume</a>
+            </p>
+            -->
+          </div>
+        </div>
+      </section>
+
+      <section class="section split" id="research" aria-labelledby="research-title">
+        <div>
+          <h3 id="research-title">Research engineering</h3>
+          <p>
+            I build research-grade systems with production discipline: reproducibility, scalable pipelines, and
+            infrastructure that survives real-world constraints.
+          </p>
+          <ul class="list">
+            <li>Operationalize prototypes into repeatable pipelines (data, inference, evaluation).</li>
+            <li>Design failure-tolerant workflows for Slurm-managed HPC and GPU workloads.</li>
+            <li>Prioritize traceability: schemas, versioning, and artifact lineage.</li>
           </ul>
         </div>
-        <div class="card">
-          <p class="card-eyebrow">Currently</p>
-          <p class="card-title">Machine Learning Engineer @ Michigan Medicine in the <a
-              href="https://mlins.org/">Machine Learning in Neurosurgery Lab</a></p>
-          <p class="card-body">
-            Building scalable data and experimentation platforms utilizing HPC enviornments with multi.
-          </p>
-        </div>
-      </div>
-    </section>
 
-    <!-- <section class="section" id="work">
+        <div class="panel">
+          <p class="panel-title">Toolkit</p>
+          <div class="panel-grid">
+            <div>
+              <p class="panel-label">Languages</p>
+              <p class="panel-value">Python, C++, Rust, Bash</p>
+            </div>
+            <div>
+              <p class="panel-label">Systems</p>
+              <p class="panel-value">Slurm, containers, GPU compute</p>
+            </div>
+            <div>
+              <p class="panel-label">Data</p>
+              <p class="panel-value">Pipelines, lineage, medical imaging ETL</p>
+            </div>
+            <div>
+              <p class="panel-label">Ops</p>
+              <p class="panel-value">Observability, reproducibility, reliability</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="education" aria-labelledby="education-title">
         <div class="section-head">
-          <h3>Selected Work</h3>
-          <p>Case studies that balance rigor, reliability, and speed.</p>
+          <h3 id="education-title">Education</h3>
+          <p>Academic background and relevant study.</p>
         </div>
-        <div class="grid-3">
-          <article class="work-card">
-            <div class="work-meta">
-              <span>Platform</span>
-              <span>2024</span>
-            </div>
-            <h4>Experimentation Orchestrator</h4>
-            <p>
-              Led architecture for a multi-tenant experimentation system that cut model iteration cycles by 40%.
-            </p>
-            <ul class="work-tags">
-              <li>Python</li>
-              <li>Kubernetes</li>
-              <li>Feature flags</li>
-            </ul>
-          </article>
-          <article class="work-card">
-            <div class="work-meta">
-              <span>Research</span>
-              <span>2023</span>
-            </div>
-            <h4>Scalable Graph Inference</h4>
-            <p>
-              Built an academic-industry collaboration for graph inference tooling, enabling 5x larger datasets.
-            </p>
-            <ul class="work-tags">
-              <li>CUDA</li>
-              <li>PyTorch</li>
-              <li>HPC</li>
-            </ul>
-          </article>
-          <article class="work-card">
-            <div class="work-meta">
-              <span>Product</span>
-              <span>2022</span>
-            </div>
-            <h4>Developer Insights Hub</h4>
-            <p>
-              Delivered a self-serve analytics hub for engineering orgs, aligning platform metrics with delivery.
-            </p>
-            <ul class="work-tags">
-              <li>TypeScript</li>
-              <li>React</li>
-              <li>Snowflake</li>
-            </ul>
-          </article>
-        </div>
-      </section> -->
 
-    <!-- <section class="section split" id="research">
-      <div>
-        <h3>Academic DNA</h3>
-        <p>
-          Experience spanning labs, publications, and grant-funded prototypes. I thrive when research
-          demands engineering maturity to reach the real world.
-        </p>
-        <ul class="list">
-          <li>Partnered with faculty to operationalize research prototypes into production stacks.</li>
-          <li>Published and presented work on scalable inference and data systems.</li>
-          <li>Mentored graduate students on reproducibility, infrastructure, and deployment.</li>
-        </ul>
-      </div>
-      <div class="panel">
-        <p class="panel-title">Research toolkit</p>
-        <div class="panel-grid">
-          <div>
-            <p class="panel-label">Languages</p>
-            <p class="panel-value">Python, C++, Rust</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-title">
+              <h4>University of Texas at Austin</h4>
+              <span>MS Computer Science</span>
+            </div>
+            <p class="card-body">Focus: ML systems · In progress (started 2026)</p>
           </div>
-          <div>
-            <p class="panel-label">Methods</p>
-            <p class="panel-value">Graph ML, systems, optimization</p>
-          </div>
-          <div>
-            <p class="panel-label">Delivery</p>
-            <p class="panel-value">Reproducibility, pipelines, infra</p>
-          </div>
-          <div>
-            <p class="panel-label">Collaboration</p>
-            <p class="panel-value">Labs, industry, open source</p>
-          </div>
-        </div>
-      </div>
-    </section> -->
 
-    <section class="section" id="education">
-      <div class="section-head">
-        <h3>Education</h3>
-        <p>Academic background and relevant certificates.</p>
-      </div>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-title">
-            <h4>University of Texas at Austin</h4>
-            <span>MS Computer Science</span>
+          <div class="timeline-item">
+            <div class="timeline-title">
+              <h4>Oregon State University</h4>
+              <span>Post-Baccalaureate Studies in Computer Science</span>
+            </div>
           </div>
-          <!-- <p>
-            Leading platform initiatives for ML experimentation, reliability, and developer enablement.
-          </p> -->
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-title">
-            <h4>Oregon State University</h4>
-            <span>Post Baccalaureate Studies in Computer Science</span>
-          </div>
-          <!-- <p>
-            Built scalable inference pipelines and collaborated on grant-funded prototypes for research labs.
-          </p> -->
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-title">
-            <h4>University of Michigan - Ann Arbor</h4>
-            <span>BS Chemistry</span>
-          </div>
-          <!-- <p>
-            Delivered developer tooling, observability, and data platforms supporting cross-functional teams.
-          </p> -->
-        </div>
-      </div>
-    </section>
-    <section class="section" id="experience">[]
-      <div class="section-head">
-        <h3>Experience</h3>
-        <p>Roles across product engineering, platform, and research.</p>
-      </div>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-title">
-            <h4>Staff Software Engineer</h4>
-            <span>Industry</span>
-          </div>
-          <p>
-            Leading platform initiatives for ML experimentation, reliability, and developer enablement.
-          </p>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-title">
-            <h4>Research Engineer</h4>
-            <span>Academia</span>
-          </div>
-          <p>
-            Built scalable inference pipelines and collaborated on grant-funded prototypes for research labs.
-          </p>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-title">
-            <h4>Software Engineer</h4>
-            <span>Industry</span>
-          </div>
-          <p>
-            Delivered developer tooling, observability, and data platforms supporting cross-functional teams.
-          </p>
-        </div>
-      </div>
-    </section>
 
-    <!-- <section class="section contact" id="contact">
+          <div class="timeline-item">
+            <div class="timeline-title">
+              <h4>University of Michigan - Ann Arbor</h4>
+              <span>BS Chemistry</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience" aria-labelledby="experience-title">
+        <div class="section-head">
+          <h3 id="experience-title">Experience</h3>
+          <p>Roles across platform engineering, research engineering, and production software.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-title">
+              <h4>Machine Learning Engineer</h4>
+              <span>Michigan Medicine</span>
+            </div>
+            <p class="card-body">
+              Built Slurm-based GPU inference and evaluation workflows; designed data/annotation pipelines with
+              reproducibility and artifact lineage.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-title">
+              <h4>Staff Software Engineer</h4>
+              <span>Industry</span>
+            </div>
+            <p class="card-body">
+              Led platform initiatives focused on reliability, developer experience, and operational maturity.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-title">
+              <h4>Research Engineer</h4>
+              <span>Academia</span>
+            </div>
+            <p class="card-body">
+              Built scalable inference pipelines and collaborated on grant-funded prototypes with reproducible
+              delivery.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Optional contact section -->
+      <!--
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
         <div>
-          <h3>Let's build something resilient.</h3>
+          <h3 id="contact-title">Let’s build something resilient.</h3>
           <p>
             Open to collaborations, research partnerships, and ambitious infrastructure projects.
             Reach out to swap ideas or talk about what you're building.
           </p>
         </div>
+
         <div class="contact-card">
           <p class="contact-label">Say hello</p>
           <a class="contact-link" href="mailto:hello@jakeogle.com">hello@jakeogle.com</a>
@@ -256,15 +261,17 @@
             <a class="btn ghost" href="#top">Back to top</a>
           </div>
         </div>
-      </section> -->
-  </main>
+      </section>
+      -->
+    </main>
 
-  <footer class="site-footer">
-    <!-- <p>Based in the U.S. | Open to remote or hybrid roles</p> -->
-    <p>© 2026 Jake Ogle</p>
-  </footer>
+    <footer class="site-footer">
+      <p>© 2026 Jake Ogle</p>
+      <noscript>
+        <p>Theme toggle requires JavaScript.</p>
+      </noscript>
+    </footer>
 
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>

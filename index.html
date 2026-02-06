@@ -1,78 +1,85 @@
 <!doctype html>
 <html lang="en" data-theme="dark">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Jake Ogle | Software Engineer</title>
-    <meta name="description" content="Portfolio for Jake Ogle, software engineer with experience in academia and industry." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&family=IBM+Plex+Mono:wght@300;400;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="ambient" aria-hidden="true">
-      <div class="orb orb-a"></div>
-      <div class="orb orb-b"></div>
-      <div class="grid"></div>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jake Ogle | Software Engineer</title>
+  <meta name="description"
+    content="Portfolio for Jake Ogle, software engineer with experience in academia and industry." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&family=IBM+Plex+Mono:wght@300;400;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="ambient" aria-hidden="true">
+    <div class="orb orb-a"></div>
+    <div class="orb orb-b"></div>
+    <div class="grid"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="brand">
+      <div class="sig">JO</div>
+      <div>
+        <p class="eyebrow">Software Engineer</p>
+        <h1>Jake Ogle</h1>
+      </div>
     </div>
+    <div class="header-actions">
+      <nav class="site-nav">
+        <a href="#work">Work</a>
+        <a href="#research">Research</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-pressed="true">
+        <span class="toggle-label">Theme</span>
+        <span class="toggle-track">
+          <span class="toggle-thumb"></span>
+        </span>
+        <span class="toggle-state">Dark</span>
+      </button>
+    </div>
+  </header>
 
-    <header class="site-header">
-      <div class="brand">
-        <div class="sig">JO</div>
-        <div>
-          <p class="eyebrow">Software Engineer</p>
-          <h1>Jake Ogle</h1>
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">Engineering + Research</p>
+        <p class="lede">
+          I design and ship software and data tools across academia and industry, with a focus on distributed systems,
+          ML infrastructure, and developer tooling.
+        </p>
+      </div>
+      <div class="hero-panel">
+        <div class="card">
+          <p class="card-eyebrow">Focus areas</p>
+          <ul class="chips">
+            <li>ML systems engineering</li>
+            <li>Distributed inference on HPC/GPU clusters</li>
+            <li>Large-scale data and annotation pipelines</li>
+            <li>Performance-critical GPU workloads</li>
+            <li>Medical imaging ML infrastructure</li>
+          </ul>
         </div>
-      </div>
-      <div class="header-actions">
-        <nav class="site-nav">
-          <a href="#work">Work</a>
-          <a href="#research">Research</a>
-          <a href="#experience">Experience</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <button class="theme-toggle" type="button" aria-pressed="true">
-          <span class="toggle-label">Theme</span>
-          <span class="toggle-track">
-            <span class="toggle-thumb"></span>
-          </span>
-          <span class="toggle-state">Dark</span>
-        </button>
-      </div>
-    </header>
-
-    <main>
-      <section class="hero" id="top">
-        <div class="hero-copy">
-          <p class="eyebrow">Engineering + Research</p>
-          <p class="lede">
-            I design and ship software and data tools across academia and industry, with a focus on distributed systems,
-            ML infrastructure, and developer tooling.
+        <div class="card">
+          <p class="card-eyebrow">Currently</p>
+          <p class="card-title">Machine Learning Engineer @ Michigan Medicine in the <a
+              href="https://mlins.org/">Machine Learning in Neurosurgery Lab</a></p>
+          <p class="card-body">
+            Building scalable data and experimentation platforms utilizing HPC enviornments with multi.
           </p>
         </div>
-        <div class="hero-panel">
-          <div class="card">
-            <p class="card-eyebrow">Focus areas</p>
-            <ul class="chips">
-              <li>ML systems engineering</li>
-              <li>Distributed inference on HPC/GPU clusters</li>
-              <li>Large-scale data and annotation pipelines</li>
-              <li>Performance-critical GPU workloads</li>
-              <li>Medical imaging ML infrastructure</li>
-            </ul>
-          </div>
-          <div class="card">
-            <p class="card-eyebrow">Currently</p>
-            <p class="card-title">Machine Learning Engineer @ Michigan Medicine in the <a href="https://mlins.org/">Machine Learning in Neurosurgery Lab</a></p>
-            <p class="card-body">
-              Building scalable data and experimentation platforms utilizing HPC enviornments with multi. 
-            </p>
-          </div>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- <section class="section" id="work">
+    <!-- <section class="section" id="work">
         <div class="section-head">
           <h3>Selected Work</h3>
           <p>Case studies that balance rigor, reliability, and speed.</p>
@@ -126,79 +133,114 @@
         </div>
       </section> -->
 
-      <section class="section split" id="research">
-        <div>
-          <h3>Academic DNA</h3>
+    <!-- <section class="section split" id="research">
+      <div>
+        <h3>Academic DNA</h3>
+        <p>
+          Experience spanning labs, publications, and grant-funded prototypes. I thrive when research
+          demands engineering maturity to reach the real world.
+        </p>
+        <ul class="list">
+          <li>Partnered with faculty to operationalize research prototypes into production stacks.</li>
+          <li>Published and presented work on scalable inference and data systems.</li>
+          <li>Mentored graduate students on reproducibility, infrastructure, and deployment.</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <p class="panel-title">Research toolkit</p>
+        <div class="panel-grid">
+          <div>
+            <p class="panel-label">Languages</p>
+            <p class="panel-value">Python, C++, Rust</p>
+          </div>
+          <div>
+            <p class="panel-label">Methods</p>
+            <p class="panel-value">Graph ML, systems, optimization</p>
+          </div>
+          <div>
+            <p class="panel-label">Delivery</p>
+            <p class="panel-value">Reproducibility, pipelines, infra</p>
+          </div>
+          <div>
+            <p class="panel-label">Collaboration</p>
+            <p class="panel-value">Labs, industry, open source</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="section" id="education">
+      <div class="section-head">
+        <h3>Education</h3>
+        <p>Academic background and relevant certificates.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-title">
+            <h4>University of Texas at Austin</h4>
+            <span>MS Computer Science</span>
+          </div>
+          <!-- <p>
+            Leading platform initiatives for ML experimentation, reliability, and developer enablement.
+          </p> -->
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-title">
+            <h4>Oregon State University</h4>
+            <span>Post Baccalaureate Studies in Computer Science</span>
+          </div>
+          <!-- <p>
+            Built scalable inference pipelines and collaborated on grant-funded prototypes for research labs.
+          </p> -->
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-title">
+            <h4>University of Michigan - Ann Arbor</h4>
+            <span>BS Chemistry</span>
+          </div>
+          <!-- <p>
+            Delivered developer tooling, observability, and data platforms supporting cross-functional teams.
+          </p> -->
+        </div>
+      </div>
+    </section>
+    <section class="section" id="experience">[]
+      <div class="section-head">
+        <h3>Experience</h3>
+        <p>Roles across product engineering, platform, and research.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-title">
+            <h4>Staff Software Engineer</h4>
+            <span>Industry</span>
+          </div>
           <p>
-            Experience spanning labs, publications, and grant-funded prototypes. I thrive when research
-            demands engineering maturity to reach the real world.
+            Leading platform initiatives for ML experimentation, reliability, and developer enablement.
           </p>
-          <ul class="list">
-            <li>Partnered with faculty to operationalize research prototypes into production stacks.</li>
-            <li>Published and presented work on scalable inference and data systems.</li>
-            <li>Mentored graduate students on reproducibility, infrastructure, and deployment.</li>
-          </ul>
         </div>
-        <div class="panel">
-          <p class="panel-title">Research toolkit</p>
-          <div class="panel-grid">
-            <div>
-              <p class="panel-label">Languages</p>
-              <p class="panel-value">Python, C++, Rust</p>
-            </div>
-            <div>
-              <p class="panel-label">Methods</p>
-              <p class="panel-value">Graph ML, systems, optimization</p>
-            </div>
-            <div>
-              <p class="panel-label">Delivery</p>
-              <p class="panel-value">Reproducibility, pipelines, infra</p>
-            </div>
-            <div>
-              <p class="panel-label">Collaboration</p>
-              <p class="panel-value">Labs, industry, open source</p>
-            </div>
+        <div class="timeline-item">
+          <div class="timeline-title">
+            <h4>Research Engineer</h4>
+            <span>Academia</span>
           </div>
+          <p>
+            Built scalable inference pipelines and collaborated on grant-funded prototypes for research labs.
+          </p>
         </div>
-      </section>
+        <div class="timeline-item">
+          <div class="timeline-title">
+            <h4>Software Engineer</h4>
+            <span>Industry</span>
+          </div>
+          <p>
+            Delivered developer tooling, observability, and data platforms supporting cross-functional teams.
+          </p>
+        </div>
+      </div>
+    </section>
 
-      <section class="section" id="experience">
-        <div class="section-head">
-          <h3>Experience</h3>
-          <p>Roles across product engineering, platform, and research.</p>
-        </div>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-title">
-              <h4>Staff Software Engineer</h4>
-              <span>Industry</span>
-            </div>
-            <p>
-              Leading platform initiatives for ML experimentation, reliability, and developer enablement.
-            </p>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-title">
-              <h4>Research Engineer</h4>
-              <span>Academia</span>
-            </div>
-            <p>
-              Built scalable inference pipelines and collaborated on grant-funded prototypes for research labs.
-            </p>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-title">
-              <h4>Software Engineer</h4>
-              <span>Industry</span>
-            </div>
-            <p>
-              Delivered developer tooling, observability, and data platforms supporting cross-functional teams.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section contact" id="contact">
+    <!-- <section class="section contact" id="contact">
         <div>
           <h3>Let's build something resilient.</h3>
           <p>
@@ -214,14 +256,15 @@
             <a class="btn ghost" href="#top">Back to top</a>
           </div>
         </div>
-      </section>
-    </main>
+      </section> -->
+  </main>
 
-    <footer class="site-footer">
-      <p>Based in the U.S. | Open to remote or hybrid roles</p>
-      <p>© 2026 Jake Ogle</p>
-    </footer>
+  <footer class="site-footer">
+    <!-- <p>Based in the U.S. | Open to remote or hybrid roles</p> -->
+    <p>© 2026 Jake Ogle</p>
+  </footer>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>

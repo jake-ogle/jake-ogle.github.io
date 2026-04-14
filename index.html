@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!doctype html>
 <html lang="en" data-theme="light">
 
@@ -23,12 +22,12 @@
   <meta name="twitter:description"
     content="Senior Data Engineer building production data platforms, real-time ingestion pipelines, and ML infrastructure." />
 
-  <meta name="theme-color" content="#f8f9fb" />
+  <meta name="theme-color" content="#1a2035" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -36,425 +35,400 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <div class="ambient" aria-hidden="true">
-    <div class="orb orb-a"></div>
-    <div class="orb orb-b"></div>
-    <div class="grid"></div>
-  </div>
+  <div class="layout">
 
-  <header class="site-header">
-    <div class="brand">
-      <div class="sig" aria-hidden="true">JO</div>
-      <div>
-        <p class="eyebrow">Senior Data Engineer</p>
-        <h1>Jake Ogle</h1>
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar" aria-label="Profile and navigation">
+      <div class="sidebar-inner">
+
+        <div class="profile">
+          <div class="avatar" aria-hidden="true">JO</div>
+          <h1 class="name">Jake Ogle</h1>
+          <p class="title-badge">Senior Data Engineer</p>
+          <p class="location">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Ann Arbor, MI
+          </p>
+        </div>
+
+        <div class="sidebar-divider" aria-hidden="true"></div>
+
+        <nav class="sidebar-nav" aria-label="Page sections">
+          <a href="#summary">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="sidebar-divider" aria-hidden="true"></div>
+
+        <div class="sidebar-links">
+          <p class="sidebar-label">Connect</p>
+          <a href="https://linkedin.com/in/jakeogle" class="sidebar-link" target="_blank" rel="noopener noreferrer">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/jake-ogle" class="sidebar-link" target="_blank" rel="noopener noreferrer">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+          <a href="mailto:jakeogle@umich.edu" class="sidebar-link">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            jakeogle@umich.edu
+          </a>
+        </div>
+
+        <div class="sidebar-bottom">
+          <button class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">
+            <svg class="icon-sun" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <span class="toggle-track" aria-hidden="true"><span class="toggle-thumb"></span></span>
+            <svg class="icon-moon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <span class="toggle-state sr-only" aria-live="polite">Light</span>
+          </button>
+        </div>
+
       </div>
-    </div>
+    </aside>
 
-    <div class="header-actions">
-      <nav class="site-nav" aria-label="Primary">
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    <!-- ===== MAIN CONTENT ===== -->
+    <main id="main">
 
-      <button class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">
-        <span class="toggle-label">Theme</span>
-        <span class="toggle-track" aria-hidden="true">
-          <span class="toggle-thumb"></span>
-        </span>
-        <span class="toggle-state" aria-live="polite">Light</span>
-      </button>
-    </div>
-  </header>
-
-  <main id="main">
-
-    <!-- Hero -->
-    <section class="hero" id="top" aria-labelledby="hero-heading">
-      <div class="hero-copy">
-        <p class="eyebrow">Ann Arbor, MI</p>
-        <h2 id="hero-heading">Senior Data Engineer</h2>
-        <p class="lede">
+      <!-- About / Summary -->
+      <section class="section" id="summary" aria-labelledby="summary-heading">
+        <header class="section-header">
+          <h2 id="summary-heading">About</h2>
+        </header>
+        <p class="about-text">
           Data Engineer with 6+ years designing and owning production data platforms, real-time ingestion pipelines,
           and enterprise data infrastructure across automotive, manufacturing, and clinical environments. Proven
           experience building end-to-end systems at scale — from streaming telemetry and cloud-native ETL to
           LLM-powered tooling and cross-functional data products — with hands-on exposure across Azure, GCP, and AWS.
         </p>
-        <div class="hero-links">
-          <a class="btn primary" href="https://linkedin.com/in/jakeogle" target="_blank"
-            rel="noopener noreferrer">LinkedIn</a>
-          <a class="btn ghost" href="https://github.com/jake-ogle" target="_blank"
-            rel="noopener noreferrer">GitHub</a>
-          <a class="btn ghost" href="mailto:jakeogle@umich.edu">Email</a>
-        </div>
-      </div>
-
-      <div class="hero-panel">
-        <div class="card">
-          <p class="card-eyebrow">Currently</p>
-          <p class="card-title">Senior Data Engineer @ Michigan Medicine</p>
-          <p class="card-body">
-            <a href="https://mlins.org/" target="_blank" rel="noopener noreferrer">Machine Learning in Neurosurgery
-              Lab</a> · Dec 2025 – Present
+        <div class="highlight-card">
+          <p class="card-label">Currently</p>
+          <p class="card-headline">Senior Data Engineer @ Michigan Medicine</p>
+          <p class="card-sub">
+            <a href="https://mlins.org/" target="_blank" rel="noopener noreferrer">Machine Learning in Neurosurgery Lab</a>
+            &nbsp;·&nbsp; Dec 2025 – Present
           </p>
-          <p class="card-body" style="margin-top:8px;">
+          <p class="card-body">
             Building and operating end-to-end data infrastructure for large-scale multimodal clinical AI research,
             including DICOM ingestion pipelines, LLM inference on HPC, and near-petabyte dataset management.
           </p>
-        </div>
-
-        <div class="card">
-          <p class="card-eyebrow">Focus areas</p>
-          <ul class="chips" aria-label="Areas of focus">
+          <ul class="focus-chips" aria-label="Focus areas">
             <li>Data platform engineering</li>
             <li>Real-time ingestion pipelines</li>
             <li>LLM &amp; ML infrastructure</li>
             <li>HPC / Slurm workloads</li>
             <li>Clinical &amp; medical imaging data</li>
-            <li>Cloud-native ETL (Azure, GCP, AWS)</li>
+            <li>Cloud-native ETL (Azure · GCP · AWS)</li>
           </ul>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Skills -->
-    <section class="section" id="skills" aria-labelledby="skills-title">
-      <div class="section-head">
-        <h3 id="skills-title">Technical Skills</h3>
-        <p>Languages, tools, and platforms across data engineering, ML infrastructure, and cloud systems.</p>
-      </div>
-
-      <div class="skills-grid">
-        <div class="skill-group">
-          <p class="skill-label">Languages</p>
-          <ul class="chips">
-            <li>Python</li>
-            <li>SQL</li>
-            <li>Java</li>
-            <li>Bash</li>
-            <li>C</li>
-            <li>C++</li>
-            <li>Rust</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <p class="skill-label">Data Engineering</p>
-          <ul class="chips">
-            <li>Apache Airflow</li>
-            <li>Apache Solr</li>
-            <li>RabbitMQ</li>
-            <li>ETL/ELT design</li>
-            <li>Data lineage</li>
-            <li>Data governance</li>
-            <li>Data quality frameworks</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <p class="skill-label">Cloud &amp; Infrastructure</p>
-          <ul class="chips">
-            <li>GCP BigQuery</li>
-            <li>Azure Data Factory</li>
-            <li>Azure Blob Storage</li>
-            <li>Azure SQL</li>
-            <li>AWS S3/EC2</li>
-            <li>Docker</li>
-            <li>Linux</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <p class="skill-label">Databases &amp; Storage</p>
-          <ul class="chips">
-            <li>SQL Server</li>
-            <li>PostgreSQL</li>
-            <li>DuckDB</li>
-            <li>SQLite</li>
-            <li>ChromaDB</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <p class="skill-label">ML &amp; AI Tooling</p>
-          <ul class="chips">
-            <li>PyTorch</li>
-            <li>vLLM</li>
-            <li>LangChain</li>
-            <li>Ollama</li>
-            <li>OpenCV</li>
-            <li>YOLO</li>
-            <li>Slurm</li>
-            <li>HPC</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <p class="skill-label">Clinical &amp; Domain Data</p>
-          <ul class="chips">
-            <li>DICOM</li>
-            <li>NIfTI</li>
-            <li>dcm2niix</li>
-            <li>Clinical NLP</li>
-            <li>Genomics pipelines</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <p class="skill-label">Practices</p>
-          <ul class="chips">
-            <li>CI/CD</li>
-            <li>REST API design</li>
-            <li>Distributed systems</li>
-            <li>Experiment reproducibility</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience -->
-    <section class="section" id="experience" aria-labelledby="experience-title">
-      <div class="section-head">
-        <h3 id="experience-title">Experience</h3>
-        <p>6+ years across clinical AI, automotive manufacturing, embedded systems, and vehicle diagnostics.</p>
-      </div>
-
-      <div class="timeline">
-
-        <div class="timeline-item">
-          <div class="timeline-title">
-            <div>
-              <h4>Senior Data Engineer</h4>
-              <p class="timeline-org">Michigan Medicine – MLiNS Lab</p>
-            </div>
-            <div class="timeline-meta">
-              <span class="timeline-date">Dec 2025 – Present</span>
-              <span class="timeline-loc">Ann Arbor, MI</span>
-            </div>
+      <!-- Skills -->
+      <section class="section section--alt" id="skills" aria-labelledby="skills-heading">
+        <header class="section-header">
+          <h2 id="skills-heading">Technical Skills</h2>
+          <p class="section-sub">Languages, tools, and platforms across data engineering, ML infrastructure, and cloud systems.</p>
+        </header>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <p class="skill-label">Languages</p>
+            <ul class="chips">
+              <li>Python</li><li>SQL</li><li>Java</li><li>Bash</li><li>C</li><li>C++</li><li>Rust</li>
+            </ul>
           </div>
-          <ul class="bullet-list">
-            <li>Own and operate end-to-end data infrastructure supporting large-scale multimodal clinical AI research,
-              expanding an inherited ~500 TB dataset to near-petabyte scale through integration of open source
-              datasets and rolling clinical data acquisitions.</li>
-            <li>Built and maintain production DICOM ingestion and preprocessing pipelines using dcm2niix with a custom
-              metadata parser, generating study-level configuration files across a large-scale clinical imaging corpus
-              spanning MRI, CT, and pathology modalities.</li>
-            <li>Deployed and operate a self-hosted LLM inference stack on HPC GPU nodes using vLLM across 8 NVIDIA
-              L40 GPUs, running summarization, annotation, and classification workloads over the full clinical text
-              corpus — pulling reports from an internal Apache Solr instance with metadata managed in SQL Server.</li>
-            <li>Own Slurm job design, scheduling, execution, and monitoring for large-scale data processing and model
-              training workloads on HPC infrastructure, ensuring reproducibility, versioning, and data quality across
-              research workflows.</li>
-            <li>Maintain a modern internal data catalog using DuckLake backed by DuckDB and SQLite, alongside SQL
-              Server relational databases integrating heterogeneous clinical imaging, pathology, and report-level data
-              sources.</li>
-            <li>Support vision and vision-language model training pipelines with early development of a post-training
-              evaluation harness for assessing model performance across multimodal clinical tasks.</li>
-            <li>Contributing author on ongoing peer-reviewed research in multimodal clinical AI.</li>
-          </ul>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-title">
-            <div>
-              <h4>Data Engineer</h4>
-              <p class="timeline-org">Magna International</p>
-            </div>
-            <div class="timeline-meta">
-              <span class="timeline-date">Jan 2023 – Nov 2025</span>
-              <span class="timeline-loc">Hybrid</span>
-            </div>
+          <div class="skill-group">
+            <p class="skill-label">Data Engineering</p>
+            <ul class="chips">
+              <li>Apache Airflow</li><li>Apache Solr</li><li>RabbitMQ</li>
+              <li>ETL/ELT design</li><li>Data lineage</li><li>Data governance</li><li>Data quality frameworks</li>
+            </ul>
           </div>
-          <ul class="bullet-list">
-            <li>Served as the primary data engineering and AI authority on the plant IT team, independently
-              architecting and deploying data infrastructure across molding, painting, assembly, and inspection lines
-              for a full-scale automotive fascia manufacturing facility.</li>
-            <li>Designed and deployed real-time PLC telemetry ingestion services in Java 21 across molding and paint
-              production lines, running as daemon processes streaming press and line data to a Dockerized RabbitMQ
-              broker, with a downstream Python-based alerting system enabling automated detection and notification of
-              parts requiring quality inspection.</li>
-            <li>Architected and deployed a plant-wide internal RAG system using ChromaDB, LangChain, and Ollama,
-              indexing the facility's entire NorWeb knowledge base — reducing document retrieval latency from ~5
-              minutes to under 10 seconds for the entire plant workforce.</li>
-            <li>Built centralized Python REST APIs backed by SQL Server and Azure SQL, serving ~30 upper management
-              stakeholders across production, HR, and accounting departments as their primary interface for daily
-              operational data.</li>
-            <li>Engineered scalable data ingestion and validation pipelines using Apache Airflow, integrating
-              multi-source sensor telemetry and enterprise data across production floor systems.</li>
-            <li>Contributed to a multi-plant computer vision PoC using OpenCV and YOLO for automated assembly
-              inspection, detecting bolt attachment defects on fascia production lines in real time.</li>
-            <li>Contributed to hybrid cloud/on-prem architecture leveraging Azure Data Factory, Azure Blob Storage,
-              and Azure SQL with focus on observability, reliability, and platform scalability.</li>
-          </ul>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-title">
-            <div>
-              <h4>Software Engineering Intern – XC Division</h4>
-              <p class="timeline-org">Bosch North America</p>
-            </div>
-            <div class="timeline-meta">
-              <span class="timeline-date">May 2021 – Dec 2022</span>
-              <span class="timeline-loc">Plymouth, MI</span>
-            </div>
+          <div class="skill-group">
+            <p class="skill-label">Cloud &amp; Infrastructure</p>
+            <ul class="chips">
+              <li>GCP BigQuery</li><li>Azure Data Factory</li><li>Azure Blob Storage</li>
+              <li>Azure SQL</li><li>AWS S3/EC2</li><li>Docker</li><li>Linux</li>
+            </ul>
           </div>
-          <ul class="bullet-list">
-            <li>Embedded within the XC team supporting development of the GM central control gateway module
-              responsible for OTA software reflashing and update management.</li>
-            <li>Built automated build and code signing tooling in Python implementing GM key structure requirements,
-              enabling compliant OTA reflashing workflows for the gateway module and forming a critical part of the
-              software delivery pipeline.</li>
-            <li>Contributed directly to the production gateway module codebase, shipping features and fixes in
-              compliance with MISRA C standards and GM software development guidelines through a structured code
-              review process.</li>
-            <li>Developed an internal JIRA ticket monitoring tool for upper management, providing real-time visibility
-              into ticket time-to-completion metrics across the XC organization.</li>
-            <li>Co-led the Bosch XC Python Development Club in Plymouth, running sessions on Matlab-to-Python
-              migration and practical data tooling using Pandas, NumPy, and Matplotlib for engineering workflows.</li>
-          </ul>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-title">
-            <div>
-              <h4>Product Development Intern – Vehicle Health Alerts</h4>
-              <p class="timeline-org">Ford Motor Company</p>
-            </div>
-            <div class="timeline-meta">
-              <span class="timeline-date">May 2022 – Jul 2022</span>
-              <span class="timeline-loc">Dearborn, MI</span>
-            </div>
+          <div class="skill-group">
+            <p class="skill-label">Databases &amp; Storage</p>
+            <ul class="chips">
+              <li>SQL Server</li><li>PostgreSQL</li><li>DuckDB</li><li>SQLite</li><li>ChromaDB</li>
+            </ul>
           </div>
-          <ul class="bullet-list">
-            <li>Supported the Vehicle Health Alerts (VHA) team in diagnosing field-reported vehicle diagnostic issues,
-              including TPMS anomalies and related ECU-level faults surfaced through cross-functional JIRA
-              tickets.</li>
-            <li>Used GCP BigQuery to extract and analyze diagnostic snapshot data for specific vehicles, collaborating
-              with team members to identify data patterns and contributing findings to development team reviews and
-              discussions.</li>
-            <li>Gained hands-on exposure to vehicle diagnostic data architecture, ECU feature sets, and
-              cross-functional automotive software development workflows.</li>
-          </ul>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-title">
-            <div>
-              <h4>Clinical Data Manager / Research Engineer</h4>
-              <p class="timeline-org">Michigan Medicine – Bielas &amp; Martin Labs</p>
-            </div>
-            <div class="timeline-meta">
-              <span class="timeline-date">Jun 2019 – May 2021</span>
-              <span class="timeline-loc">Ann Arbor, MI</span>
-            </div>
+          <div class="skill-group">
+            <p class="skill-label">ML &amp; AI Tooling</p>
+            <ul class="chips">
+              <li>PyTorch</li><li>vLLM</li><li>LangChain</li><li>Ollama</li>
+              <li>OpenCV</li><li>YOLO</li><li>Slurm</li><li>HPC</li>
+            </ul>
           </div>
-          <ul class="bullet-list">
-            <li>Developed clinical research participant tracking databases and data management frameworks supporting
-              multi-institutional rare disease research cohorts.</li>
-            <li>Supported large-scale computational genomics pipelines under the Gabriella Miller Kids First federal
-              research initiative, including WGS/WES sequencing projects.</li>
-          </ul>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Education -->
-    <section class="section" id="education" aria-labelledby="education-title">
-      <div class="section-head">
-        <h3 id="education-title">Education</h3>
-      </div>
-
-      <div class="timeline">
-
-        <div class="timeline-item">
-          <div class="timeline-title">
-            <div>
-              <h4>University of Texas at Austin</h4>
-              <p class="timeline-org">M.S. Computer Science – Machine Learning Systems Focus</p>
-            </div>
-            <span class="timeline-date">In Progress (Started 2026)</span>
+          <div class="skill-group">
+            <p class="skill-label">Clinical &amp; Domain Data</p>
+            <ul class="chips">
+              <li>DICOM</li><li>NIfTI</li><li>dcm2niix</li><li>Clinical NLP</li><li>Genomics pipelines</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <p class="skill-label">Practices</p>
+            <ul class="chips">
+              <li>CI/CD</li><li>REST API design</li><li>Distributed systems</li><li>Experiment reproducibility</li>
+            </ul>
           </div>
         </div>
+      </section>
 
-        <div class="timeline-item">
-          <div class="timeline-title">
-            <div>
-              <h4>Oregon State University</h4>
-              <p class="timeline-org">B.S. Computer Science</p>
+      <!-- Experience -->
+      <section class="section" id="experience" aria-labelledby="experience-heading">
+        <header class="section-header">
+          <h2 id="experience-heading">Experience</h2>
+          <p class="section-sub">6+ years across clinical AI, automotive manufacturing, embedded systems, and vehicle diagnostics.</p>
+        </header>
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Senior Data Engineer</h3>
+                <p class="timeline-org">Michigan Medicine – MLiNS Lab</p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">Dec 2025 – Present</span>
+                <span class="timeline-loc">Ann Arbor, MI</span>
+              </div>
+            </div>
+            <ul class="bullet-list">
+              <li>Own and operate end-to-end data infrastructure supporting large-scale multimodal clinical AI research,
+                expanding an inherited ~500 TB dataset to near-petabyte scale through integration of open source
+                datasets and rolling clinical data acquisitions.</li>
+              <li>Built and maintain production DICOM ingestion and preprocessing pipelines using dcm2niix with a custom
+                metadata parser, generating study-level configuration files across a large-scale clinical imaging corpus
+                spanning MRI, CT, and pathology modalities.</li>
+              <li>Deployed and operate a self-hosted LLM inference stack on HPC GPU nodes using vLLM across 8 NVIDIA
+                L40 GPUs, running summarization, annotation, and classification workloads over the full clinical text
+                corpus — pulling reports from an internal Apache Solr instance with metadata managed in SQL Server.</li>
+              <li>Own Slurm job design, scheduling, execution, and monitoring for large-scale data processing and model
+                training workloads on HPC infrastructure, ensuring reproducibility, versioning, and data quality across
+                research workflows.</li>
+              <li>Maintain a modern internal data catalog using DuckLake backed by DuckDB and SQLite, alongside SQL
+                Server relational databases integrating heterogeneous clinical imaging, pathology, and report-level data
+                sources.</li>
+              <li>Support vision and vision-language model training pipelines with early development of a post-training
+                evaluation harness for assessing model performance across multimodal clinical tasks.</li>
+              <li>Contributing author on ongoing peer-reviewed research in multimodal clinical AI.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Data Engineer</h3>
+                <p class="timeline-org">Magna International</p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">Jan 2023 – Nov 2025</span>
+                <span class="timeline-loc">Hybrid</span>
+              </div>
+            </div>
+            <ul class="bullet-list">
+              <li>Served as the primary data engineering and AI authority on the plant IT team, independently
+                architecting and deploying data infrastructure across molding, painting, assembly, and inspection lines
+                for a full-scale automotive fascia manufacturing facility.</li>
+              <li>Designed and deployed real-time PLC telemetry ingestion services in Java 21 across molding and paint
+                production lines, running as daemon processes streaming press and line data to a Dockerized RabbitMQ
+                broker, with a downstream Python-based alerting system enabling automated detection and notification of
+                parts requiring quality inspection.</li>
+              <li>Architected and deployed a plant-wide internal RAG system using ChromaDB, LangChain, and Ollama,
+                indexing the facility's entire NorWeb knowledge base — reducing document retrieval latency from ~5
+                minutes to under 10 seconds for the entire plant workforce.</li>
+              <li>Built centralized Python REST APIs backed by SQL Server and Azure SQL, serving ~30 upper management
+                stakeholders across production, HR, and accounting departments as their primary interface for daily
+                operational data.</li>
+              <li>Engineered scalable data ingestion and validation pipelines using Apache Airflow, integrating
+                multi-source sensor telemetry and enterprise data across production floor systems.</li>
+              <li>Contributed to a multi-plant computer vision PoC using OpenCV and YOLO for automated assembly
+                inspection, detecting bolt attachment defects on fascia production lines in real time.</li>
+              <li>Contributed to hybrid cloud/on-prem architecture leveraging Azure Data Factory, Azure Blob Storage,
+                and Azure SQL with focus on observability, reliability, and platform scalability.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Software Engineering Intern – XC Division</h3>
+                <p class="timeline-org">Bosch North America</p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">May 2021 – Dec 2022</span>
+                <span class="timeline-loc">Plymouth, MI</span>
+              </div>
+            </div>
+            <ul class="bullet-list">
+              <li>Embedded within the XC team supporting development of the GM central control gateway module
+                responsible for OTA software reflashing and update management.</li>
+              <li>Built automated build and code signing tooling in Python implementing GM key structure requirements,
+                enabling compliant OTA reflashing workflows for the gateway module and forming a critical part of the
+                software delivery pipeline.</li>
+              <li>Contributed directly to the production gateway module codebase, shipping features and fixes in
+                compliance with MISRA C standards and GM software development guidelines through a structured code
+                review process.</li>
+              <li>Developed an internal JIRA ticket monitoring tool for upper management, providing real-time visibility
+                into ticket time-to-completion metrics across the XC organization.</li>
+              <li>Co-led the Bosch XC Python Development Club in Plymouth, running sessions on Matlab-to-Python
+                migration and practical data tooling using Pandas, NumPy, and Matplotlib for engineering workflows.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Product Development Intern – Vehicle Health Alerts</h3>
+                <p class="timeline-org">Ford Motor Company</p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">May 2022 – Jul 2022</span>
+                <span class="timeline-loc">Dearborn, MI</span>
+              </div>
+            </div>
+            <ul class="bullet-list">
+              <li>Supported the Vehicle Health Alerts (VHA) team in diagnosing field-reported vehicle diagnostic issues,
+                including TPMS anomalies and related ECU-level faults surfaced through cross-functional JIRA tickets.</li>
+              <li>Used GCP BigQuery to extract and analyze diagnostic snapshot data for specific vehicles, collaborating
+                with team members to identify data patterns and contributing findings to development team reviews and
+                discussions.</li>
+              <li>Gained hands-on exposure to vehicle diagnostic data architecture, ECU feature sets, and
+                cross-functional automotive software development workflows.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Clinical Data Manager / Research Engineer</h3>
+                <p class="timeline-org">Michigan Medicine – Bielas &amp; Martin Labs</p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">Jun 2019 – May 2021</span>
+                <span class="timeline-loc">Ann Arbor, MI</span>
+              </div>
+            </div>
+            <ul class="bullet-list">
+              <li>Developed clinical research participant tracking databases and data management frameworks supporting
+                multi-institutional rare disease research cohorts.</li>
+              <li>Supported large-scale computational genomics pipelines under the Gabriella Miller Kids First federal
+                research initiative, including WGS/WES sequencing projects.</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="section section--alt" id="education" aria-labelledby="education-heading">
+        <header class="section-header">
+          <h2 id="education-heading">Education</h2>
+        </header>
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">University of Texas at Austin</h3>
+                <p class="timeline-org">M.S. Computer Science – Machine Learning Systems Focus</p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">In Progress (Started 2026)</span>
+              </div>
             </div>
           </div>
-          <ul class="bullet-list">
-            <li>Relevant coursework: Data Structures, Algorithms, Software Engineering I &amp; II, Parallel Systems in
-              C++, Open Source Software Development</li>
-          </ul>
-        </div>
 
-        <div class="timeline-item">
-          <div class="timeline-title">
-            <div>
-              <h4>University of Michigan – Ann Arbor</h4>
-              <p class="timeline-org">B.S. Chemistry</p>
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Oregon State University</h3>
+                <p class="timeline-org">B.S. Computer Science</p>
+              </div>
+            </div>
+            <ul class="bullet-list">
+              <li>Relevant coursework: Data Structures, Algorithms, Software Engineering I &amp; II, Parallel Systems in
+                C++, Open Source Software Development</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">University of Michigan – Ann Arbor</h3>
+                <p class="timeline-org">B.S. Chemistry</p>
+              </div>
             </div>
           </div>
+
         </div>
+      </section>
 
-      </div>
-    </section>
+      <!-- Projects -->
+      <section class="section" id="projects" aria-labelledby="projects-heading">
+        <header class="section-header">
+          <h2 id="projects-heading">Projects</h2>
+        </header>
+        <div class="timeline">
 
-    <!-- Projects -->
-    <section class="section" id="projects" aria-labelledby="projects-title">
-      <div class="section-head">
-        <h3 id="projects-title">Projects</h3>
-      </div>
-
-      <div class="timeline">
-
-        <div class="timeline-item">
-          <div class="timeline-title">
-            <div>
-              <h4>ESP32 CAN Bus Automotive Data Logger</h4>
-              <p class="timeline-org">Rust · ESP-IDF · esp-rs · UART</p>
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">ESP32 CAN Bus Automotive Data Logger</h3>
+                <p class="timeline-org">Rust · ESP-IDF · esp-rs · UART</p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">In Progress</span>
+              </div>
             </div>
-            <span class="timeline-date">In Progress</span>
+            <p class="item-body">
+              Developing custom firmware for an ESP32-CAN-X2 dual CAN controller to read and decode OBD2 vehicle data
+              for real-time race telemetry. Hardware includes a soldered OBD2 pigtail interface and a UART-connected
+              display implementing a functional RPM shift light on simulated CAN data. Built using Rust HAL targeting
+              bare metal embedded deployment.
+            </p>
           </div>
-          <p class="card-body" style="margin-top:4px;">
-            Developing custom firmware for an ESP32-CAN-X2 dual CAN controller to read and decode OBD2 vehicle data
-            for real-time race telemetry. Hardware includes a soldered OBD2 pigtail interface and a UART-connected
-            display implementing a functional RPM shift light on simulated CAN data. Built using Rust HAL targeting
-            bare metal embedded deployment.
-          </p>
+
         </div>
+      </section>
 
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="section contact" id="contact" aria-labelledby="contact-title">
-      <div>
-        <h3 id="contact-title">Get in touch</h3>
-        <p>Open to new opportunities, collaborations, and interesting data engineering problems.</p>
-      </div>
-
-      <div class="contact-card">
-        <p class="contact-label">Reach out</p>
-        <a class="contact-link" href="mailto:jakeogle@umich.edu">jakeogle@umich.edu</a>
-        <div class="contact-actions">
-          <a class="btn primary" href="mailto:jakeogle@umich.edu">Email me</a>
-          <a class="btn ghost" href="https://linkedin.com/in/jakeogle" target="_blank"
-            rel="noopener noreferrer">LinkedIn</a>
-          <a class="btn ghost" href="https://github.com/jake-ogle" target="_blank"
-            rel="noopener noreferrer">GitHub</a>
+      <!-- Contact -->
+      <section class="section section--alt" id="contact" aria-labelledby="contact-heading">
+        <header class="section-header">
+          <h2 id="contact-heading">Get in Touch</h2>
+          <p class="section-sub">Open to new opportunities, collaborations, and interesting data engineering problems.</p>
+        </header>
+        <div class="contact-row">
+          <a class="contact-btn contact-btn--primary" href="mailto:jakeogle@umich.edu">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            jakeogle@umich.edu
+          </a>
+          <a class="contact-btn" href="https://linkedin.com/in/jakeogle" target="_blank" rel="noopener noreferrer">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a class="contact-btn" href="https://github.com/jake-ogle" target="_blank" rel="noopener noreferrer">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
         </div>
-      </div>
-    </section>
+      </section>
 
-  </main>
+      <footer class="site-footer">
+        <p>© 2026 Jake Ogle</p>
+      </footer>
 
-  <footer class="site-footer">
-    <p>© 2026 Jake Ogle</p>
-    <noscript>
-      <p>Theme toggle requires JavaScript.</p>
-    </noscript>
-  </footer>
+    </main>
+  </div>
 
   <script src="script.js"></script>
 </body>

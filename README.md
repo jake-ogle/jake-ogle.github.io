@@ -59,3 +59,11 @@ ordinary HTML files, so there is no build step or account to configure.
 
 The template is not listed as a published article. Keep it as a starting point
 for future posts. There is no browser-based editor; write posts in your code editor.
+
+## Color themes
+
+Dark mode is the default. The header's **Light mode** toggle switches palettes
+and remembers the selection in local storage across visits and article pages.
+If browser storage is unavailable, the toggle still works for the current page.
+`theme.js` restores the choice before the stylesheet loads. New articles copied
+from the template include the same toggle automatically.

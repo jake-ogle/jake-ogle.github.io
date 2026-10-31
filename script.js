@@ -5,10 +5,11 @@ const output = document.querySelector('#terminal-output');
 const history = [];
 let historyPosition = 0;
 const responses = {
-  help: 'Available commands:\n  whoami      A quick introduction\n  work        Technical overview\n  experience  Career history\n  skills      Languages and infrastructure\n  about       Education and publications\n  contact     Get in touch\n  resume      Open the résumé PDF\n  clear       Clear command output',
-  whoami: 'Jacob Ogle · Software engineer\nML infrastructure / high-performance computing\nCurrently: Ford Motor Company, ADAS DataOps\nBased in Ottawa Lake, Michigan.',
+  help: 'Available commands:\n  whoami      A quick introduction\n  work        Technical overview\n  experience  Career history\n  skills      Languages and infrastructure\n  about       Education and publications\n  blog        Technical articles\n  contact     Get in touch\n  resume      Open the résumé PDF\n  clear       Clear command output',
+  whoami: 'Jacob Ogle · Software engineer\nML infrastructure / high-performance computing\nCurrently: Ford Motor Company, ADAS DataOps\nBased in Michigan.',
   skills: 'Languages  Python · Go · C/C++ · Bash · SQL · Rust · TypeScript\nCompute    Linux · Slurm · MPI · Kubernetes · Apptainer · PyTorch\nData       Airflow · Beam · DuckDB · PostgreSQL · TimescaleDB\nCloud      GCP · Azure · AWS',
   contact: 'Email: jakeogle@umich.edu\nGitHub: github.com/jake-ogle\nLinkedIn: linkedin.com/in/jakeogle',
+  blog: 'Technical articles on software engineering, ML infrastructure, and research computing.',
   work: 'Data infrastructure · Research & GPU computing · Production systems.',
   experience: 'Ford → Michigan Medicine → Magna → Bosch / Ford internships → Michigan Medicine research.',
   about: 'M.S. Computer Science in progress at UT Austin.\nPreviously: Oregon State CS coursework; B.S. Chemistry, University of Michigan.'
@@ -41,7 +42,7 @@ form.addEventListener('submit', (event) => {
     return;
   }
   writeLine(responses[command] || 'Command not found. Type help for available commands.');
-  if (['work', 'experience', 'about', 'contact'].includes(command)) {
+  if (['work', 'experience', 'about', 'blog', 'contact'].includes(command)) {
     document.getElementById(command).scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});
   }
 });

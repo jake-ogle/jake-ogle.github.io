@@ -9,18 +9,19 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
+  <script src="blog.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <a class="brand" href="#home" aria-label="Jacob Ogle, home"><span class="brand-icon">&gt;_</span> jake<span class="muted">@</span>ogle<span class="muted">:~</span></a>
-  <nav aria-label="Main navigation"><a href="#work">overview</a><a href="#experience">experience</a><a href="#about">about</a><a href="#contact">contact</a></nav>
+  <nav aria-label="Main navigation"><a href="#work">overview</a><a href="#experience">experience</a><a href="#about">about</a><a href="#blog">blog</a><a href="#contact">contact</a></nav>
   <a class="header-resume" href="assets/Jacob_Ogle_Resume.pdf">résumé <span aria-hidden="true">↗</span></a>
 </header>
 <main id="main">
 <section class="hero wrap" id="home" aria-labelledby="hero-heading">
   <div class="hero-copy">
-    <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> SOFTWARE ENGINEER / OTTAWA LAKE, MI</p>
+    <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> SOFTWARE ENGINEER / MICHIGAN, MI</p>
     <h1 id="hero-heading">Jacob Ogle<span class="cursor" aria-hidden="true">_</span></h1>
     <p class="hero-title">Data at scale.<br>Compute with purpose.</p>
     <p class="hero-description">I build the infrastructure behind machine learning: petabyte-scale data workflows, GPU platforms, and production systems that connect research to the real world.</p>
@@ -62,9 +63,19 @@
     <article class="job"><p class="job-date">JUN 2019 — MAY 2021</p><div><h3>Clinical Data Manager / Research Engineer</h3><p class="job-company">Michigan Medicine <span> / Bielas & Martin Labs</span></p><p>HPC genomics workflows, clinical data management, and Python automation for rare disease research.</p></div><span class="job-place">Ann Arbor, MI</span></article>
   </div>
 </div></section>
-<section class="section wrap about-section" id="about" aria-labelledby="about-heading"><div><p class="eyebrow">03 / BACKGROUND</p><h2 id="about-heading">At the intersection of<br>research and engineering.</h2><p class="about-copy">My work spans clinical research, automotive data, and manufacturing systems. The common thread is building reliable infrastructure for people working with complex data.</p><p class="about-copy">I’m based in Ottawa Lake, Michigan, and pursuing an M.S. in Computer Science at the University of Texas at Austin.</p><div class="education"><h3>Education</h3><div><span>2026 — PRESENT</span><p><strong>University of Texas at Austin</strong><br>M.S. Computer Science · in progress</p></div><div><span>2021 — 2025</span><p><strong>Oregon State University</strong><br>Postbaccalaureate coursework in Computer Science</p></div><div><span>2016 — 2019</span><p><strong>University of Michigan</strong><br>B.S. Chemistry · Ann Arbor</p></div></div></div>
+<section class="section wrap about-section" id="about" aria-labelledby="about-heading"><div><p class="eyebrow">03 / BACKGROUND</p><h2 id="about-heading">At the intersection of<br>research and engineering.</h2><p class="about-copy">My work spans clinical research, automotive data, and manufacturing systems. The common thread is building reliable infrastructure for people working with complex data.</p><p class="about-copy">I’m based in Michigan, and pursuing an M.S. in Computer Science at the University of Texas at Austin.</p><div class="education"><h3>Education</h3><div><span>2026 — PRESENT</span><p><strong>University of Texas at Austin</strong><br>M.S. Computer Science · in progress</p></div><div><span>2021 — 2025</span><p><strong>Oregon State University</strong><br>Postbaccalaureate coursework in Computer Science</p></div><div><span>2016 — 2019</span><p><strong>University of Michigan</strong><br>B.S. Chemistry · Ann Arbor</p></div></div></div>
 <div class="publications"><p class="eyebrow">RESEARCH / COAUTHORED PUBLICATIONS</p><a class="publication" href="https://doi.org/10.1038/s41591-026-04497-1"><span class="publication-journal">Nature Medicine · 2026</span><h3>Health system learning enables generalist neuroimaging models <span aria-hidden="true">↗</span></h3></a><a class="publication" href="https://pubmed.ncbi.nlm.nih.gov/31618753/"><span class="publication-journal">Pediatric Research · 2020</span><h3>Genotype-phenotype analysis of 523 patients by genetics evaluation and clinical exome sequencing <span aria-hidden="true">↗</span></h3></a><div class="skills-panel"><h3><span class="prompt">$</span> cat toolkit.txt</h3><dl><dt>Languages</dt><dd>Python, Go, C/C++, Bash, SQL, Rust, TypeScript</dd><dt>Compute</dt><dd>Linux, Slurm, MPI, Kubernetes, Apptainer, PyTorch</dd><dt>Data</dt><dd>Airflow, Beam, DuckDB, PostgreSQL, SQL Server, TimescaleDB</dd><dt>Cloud</dt><dd>GCP, Azure, AWS</dd></dl></div></div></section>
-<section class="contact-section" id="contact" aria-labelledby="contact-heading"><div class="wrap"><p class="eyebrow">04 / CONTACT</p><h2 id="contact-heading">Let’s connect<span class="cursor" aria-hidden="true">_</span></h2><p>ML infrastructure, research computing, or systems that need to scale.</p><a class="contact-email" href="mailto:jakeogle@umich.edu">jakeogle@umich.edu <span aria-hidden="true">↗</span></a><div class="contact-links"><a href="https://github.com/jake-ogle">GitHub ↗</a><a href="https://linkedin.com/in/jakeogle">LinkedIn ↗</a><a href="assets/Jacob_Ogle_Resume.pdf">Résumé PDF ↗</a></div></div></section>
+<section class="section wrap blog-section" id="blog" aria-labelledby="blog-heading">
+  <div class="section-heading"><div><p class="eyebrow">04 / TECHNICAL WRITING</p><h2 id="blog-heading">Notes from the systems side.</h2></div></div>
+  <p class="about-copy">Articles on software engineering, ML infrastructure, and research computing.</p>
+  <div id="blog-filters" class="blog-tags" role="group" aria-label="Filter articles by tag" hidden></div>
+  <div id="blog-posts" class="blog-posts">
+    <!-- Add published article cards here. See README.md for the copyable format. -->
+  </div>
+  <p id="blog-empty" class="blog-empty" role="status">No articles published yet. Check back for technical notes and deep dives.</p>
+  <noscript><p class="about-copy">All published articles appear below; tag filtering requires JavaScript.</p></noscript>
+</section>
+<section class="contact-section" id="contact" aria-labelledby="contact-heading"><div class="wrap"><p class="eyebrow">05 / CONTACT</p><h2 id="contact-heading">Let’s connect<span class="cursor" aria-hidden="true">_</span></h2><p>ML infrastructure, research computing, or systems that need to scale.</p><a class="contact-email" href="mailto:jakeogle@umich.edu">jakeogle@umich.edu <span aria-hidden="true">↗</span></a><div class="contact-links"><a href="https://github.com/jake-ogle">GitHub ↗</a><a href="https://linkedin.com/in/jakeogle">LinkedIn ↗</a><a href="assets/Jacob_Ogle_Resume.pdf">Résumé PDF ↗</a></div></div></section>
 </main>
 <footer class="wrap"><span>© <span id="year">2026</span> Jacob Ogle</span><span>Built for the web. Inspired by the cluster.</span><a href="#home">back to top ↑</a></footer>
 </body>

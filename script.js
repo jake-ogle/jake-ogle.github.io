@@ -5,11 +5,11 @@ const output = document.querySelector('#terminal-output');
 const history = [];
 let historyPosition = 0;
 const responses = {
-  help: 'Available commands:\n  whoami      A quick introduction\n  work        Selected systems and projects\n  experience  Career history\n  skills      Languages and infrastructure\n  about       Education and publications\n  contact     Get in touch\n  resume      Open the résumé PDF\n  clear       Clear command output',
+  help: 'Available commands:\n  whoami      A quick introduction\n  work        Technical overview\n  experience  Career history\n  skills      Languages and infrastructure\n  about       Education and publications\n  contact     Get in touch\n  resume      Open the résumé PDF\n  clear       Clear command output',
   whoami: 'Jacob Ogle · Software engineer\nML infrastructure / high-performance computing\nCurrently: Ford Motor Company, ADAS DataOps\nBased in Ottawa Lake, Michigan.',
   skills: 'Languages  Python · Go · C/C++ · Bash · SQL · Rust · TypeScript\nCompute    Linux · Slurm · MPI · Kubernetes · Apptainer · PyTorch\nData       Airflow · Beam · DuckDB · PostgreSQL · TimescaleDB\nCloud      GCP · Azure · AWS',
   contact: 'Email: jakeogle@umich.edu\nGitHub: github.com/jake-ogle\nLinkedIn: linkedin.com/in/jakeogle',
-  work: 'Selected work: petabyte-scale archival, parallel clinical text extraction, and manufacturing telemetry.',
+  work: 'Data infrastructure · Research & GPU computing · Production systems.',
   experience: 'Ford → Michigan Medicine → Magna → Bosch / Ford internships → Michigan Medicine research.',
   about: 'M.S. Computer Science in progress at UT Austin.\nPreviously: Oregon State CS coursework; B.S. Chemistry, University of Michigan.'
 };

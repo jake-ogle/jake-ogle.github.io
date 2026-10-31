@@ -8,7 +8,7 @@
 
 .blog-posts:has(>article:not([hidden])) + .blog-empty{display:none}
 
-/* Dark is the default; a saved explicit choice enables the light palette. */
+/* Pages default to light; saved choices select the appropriate palette. */
 :root{--heading:#c8d3bf;--terminal-bg:#0b100c;--terminal-border:#42513c;--terminal-shadow:#1b2318;--terminal-bar:#1c251a;--contact-bg:#1d291a;--contact-line:#5c7250}
 :root[data-theme="light"]{color-scheme:light;--bg:#f6f8f2;--panel:#edf1e7;--text:#202b20;--muted:#52614c;--green:#376022;--amber:#79501b;--line:#c9d2bf;--heading:#35492d;--terminal-bg:#fafcf7;--terminal-border:#a3b497;--terminal-shadow:#dce5d4;--terminal-bar:#e5ecde;--contact-bg:#e5ecde;--contact-line:#899e78}
 .theme-toggle{border:1px solid var(--line);background:var(--panel);color:var(--text);padding:7px 11px;cursor:pointer;white-space:nowrap;font:11px/1.6 var(--mono)}.theme-toggle:hover{border-color:var(--green);color:var(--green)}

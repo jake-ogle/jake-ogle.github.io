@@ -1,9 +1,10 @@
 'use strict';
 (() => {
   const root = document.documentElement;
-  let theme = 'dark';
+  let theme = 'light';
   try {
-    if (localStorage.getItem('theme') === 'light') theme = 'light';
+    const saved = localStorage.getItem('theme');
+    if (saved === 'light' || saved === 'dark') theme = saved;
   } catch { /* Browsing with storage disabled still supports toggling. */ }
 
   function applyTheme() {

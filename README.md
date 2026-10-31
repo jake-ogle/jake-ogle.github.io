@@ -25,7 +25,7 @@ This source was prepared locally because GitHub DNS was unavailable in the autho
 ## Editing
 
 - `index.html`: profile, technical overview, experience, education, publications, contact.
-- `styles.css`: responsive dark palette, typography, and layout.
+- `styles.css`: responsive light and dark palettes, typography, and layout.
 - `script.js`: optional terminal navigation, help, profile, and command history.
 - `assets/Jacob_Ogle_Resume.pdf`: current downloadable résumé. Replace when updated.
 
@@ -62,7 +62,7 @@ for future posts. There is no browser-based editor; write posts in your code edi
 
 ## Color themes
 
-Dark mode is the default. The header's **Light mode** toggle switches palettes
+Light mode is the default. The header's **Light mode** toggle switches palettes
 and remembers the selection in local storage across visits and article pages.
 If browser storage is unavailable, the toggle still works for the current page.
 `theme.js` restores the choice before the stylesheet loads. New articles copied
